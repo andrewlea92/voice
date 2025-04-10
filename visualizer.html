@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <h1>🎵 Audio Visualizer</h1>
+    <form id="audio-upload-form">
+      <input type="file" id="audio-file" accept=".wav" />
+      <button type="button" id="visualize-button">Visualize</button>
+    </form>
+    <button onclick="navigateToRecorder()" class="navigation-button">Back to Recorder</button>
+    <canvas id="waveform"></canvas>
+    <div id="playback-controls"></div>
+  </div>
+  <script>
+    function navigateToRecorder() {
+      window.location.href = 'recorder.html';
+    }
+  </script>
+  <script src="visualizer.js"></script>
+</body>
+</html>

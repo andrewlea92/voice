@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Comparator</title>
+  <link rel="stylesheet" href="comparator.css">
+</head>
+<body>
+  <div class="page">
+    <h1>Compare Audio Files</h1>
+    
+    <form id="upload-form">
+      <input type="file" id="audio-file-1" accept="audio/*" />
+      <input type="file" id="audio-file-2" accept="audio/*" />
+      <button type="button" onclick="visualizeAudio()">Compare</button>
+    </form>
+
+    <div id="waveform-container">
+      <canvas id="waveform1"></canvas>
+      <canvas id="waveform2"></canvas>
+    </div>
+
+    <div id="playback-controls">
+    </div>
+
+    <button class="navigation-button" onclick="window.history.back()">Go Back</button>
+  </div>
+
+  <script src="comparator.js"></script>
+</body>
+</html>
